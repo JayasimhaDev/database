@@ -5,6 +5,7 @@ const cors=require('cors')
 const app = express();
 app.use(express.json())
 app.use(cors());
+const port=process.env.PORT || 1890
 mongoose.connect(
     "mongodb+srv://jayasimha:jaya18jaya@cluster0.j1q0dzg.mongodb.net/Movieapp", 
     {
@@ -55,4 +56,4 @@ if(err){
   });
 
 })
-app.listen(1890, () => console.log("Server is running"))
+app.listen(port, () => console.log("Server is running"))
