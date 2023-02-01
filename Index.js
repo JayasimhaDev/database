@@ -6,6 +6,7 @@ const app = express();
 app.use(express.json())
 app.use(cors());
 const port=process.env.PORT || 1890
+//hello
 mongoose.connect(
     "mongodb+srv://jayasimha:jaya18jaya@cluster0.j1q0dzg.mongodb.net/Movieapp", 
     {
